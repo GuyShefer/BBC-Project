@@ -1,7 +1,7 @@
 import React from "react";
 import { FaHeart } from "react-icons/fa";
 
-import "./comments.css";
+import "./comment.css";
 
 const Comments = ({ comment, author, time }) => {
   return (

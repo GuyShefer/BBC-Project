@@ -1,26 +1,25 @@
-import React from 'react';
+import React from "react";
 
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 
-import './navbarstyle.css';
+import "./navbarstyle.css";
 
 // import Nav from 'react-bootstrap/Nav';
 
-
 const Navbar = () => {
+  return (
+    <>
+      <div className="navbarstyle"></div>
 
-    return (
-        <>
-        <div className="navbarstyle"></div>
-         <Link className="navbarlink" to="/">
-            Main
-          </Link>
+      <Link className="navbarlink" to="/">
+        Main
+      </Link>
 
-       
-        
-
-        </>
-    )
-}
+      <Link className="navbarlink" to="/about">
+        About
+      </Link>
+    </>
+  );
+};
 
 export default Navbar;
