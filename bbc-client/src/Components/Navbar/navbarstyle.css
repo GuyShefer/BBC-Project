@@ -1,0 +1,13 @@
+.navbarstyle{
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+
+.navbarlink{
+margin : 2rem;
+
+
+}
