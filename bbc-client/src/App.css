@@ -8,6 +8,7 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  height: 100vh;
 }
 .homepage {
   min-height: 100vh;
@@ -15,6 +16,7 @@ body {
   word-wrap: break-word;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .latestContainer {

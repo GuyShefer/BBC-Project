@@ -5,7 +5,7 @@ import "./main.css";
 
 export default function Main() {
   return (
-    <div>
+    <div className="main">
       <h2>Welcome</h2>
       <h3>Translate BBC science and environment articles</h3>
       <img src="https://i.ibb.co/16C6Z8D/bbcexample.png"></img>
