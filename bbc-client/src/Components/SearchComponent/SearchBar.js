@@ -1,15 +1,13 @@
 import React, { useEffect, useState } from "react";
-import api from '../../api/api';
+import api from "../../api/api";
 
-import './searchbar.css'
+import "./searchbar.css";
 const SearchBar = () => {
   const [webSearch, setWebSearch] = useState("");
   const [language, setLanguage] = useState("arabic");
-  const [data, setData] = useState('');
+  const [data, setData] = useState("");
 
-  useEffect(() => {
-
-  }, [])
+  useEffect(() => {}, []);
 
   const checkUrl = () => {
     const string = webSearch;
@@ -21,7 +19,10 @@ const SearchBar = () => {
 
   const handleClick = async () => {
     try {
-      const { data } = await api.post('/newPost', { url: webSearch, language : language });
+      const { data } = await api.post("/newPost", {
+        url: webSearch,
+        language: language,
+      });
       setData(data);
     } catch (err) {
       console.log(err);
@@ -29,7 +30,7 @@ const SearchBar = () => {
   };
 
   return (
-    <div>
+    <div className="fullpage">
       <div className="title"></div>
       <div>
         <div className="search-bar">
@@ -53,9 +54,14 @@ const SearchBar = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div className="APIdataContainer">
         <h1>{data.title}</h1>
-        <h4>{data.content}</h4>
+        <h4>
+          {data &&
+            data.content.map((v) => {
+              return <p>{v}</p>;
+            })}
+        </h4>
       </div>
     </div>
   );

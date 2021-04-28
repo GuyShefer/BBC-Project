@@ -1,28 +1,39 @@
-nav{
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    flex-wrap: nowrap;
-    background-color: #ffa500;
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  flex-wrap: nowrap;
+  background-color: #bb2423;
 }
-.logo{
-    font-size: 2.5rem;
-    font-weight: bold;
+.logo {
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 nav .links {
-    flex: 1;
-    position: relative;
-    padding: 0 0 0 1rem;
+  flex: 1;
+  position: relative;
+  padding: 0 0 0 1rem;
+  height: 100%;
+  padding: 1rem;
 }
+nav .links :hover {
+  background-color: #bb4123;
+}
+
+.earthlogo {
+  width: 4rem;
+  height: 4rem;
+}
+
 .navbar {
-    display: flex;
-    justify-content: left;
-    width: 100%;
+  display: flex;
+  justify-content: left;
+  width: 100%;
 }
 nav .navbar a {
-    color:  white;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 1.5rem;
-    padding: 0 .5rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 0 0.5rem;
 }
