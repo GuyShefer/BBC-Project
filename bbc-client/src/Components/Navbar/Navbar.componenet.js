@@ -1,3 +1,30 @@
+
+import React from "react";
+
+import { Link } from "react-router-dom";
+
+import "./navbarstyle.css";
+
+
+
+const Navbar = () => {
+  return (
+    <>
+      <div className="navbarstyle"></div>
+
+      <Link className="navbarlink" to="/">
+        Main
+      </Link>
+
+      <Link className="navbarlink" to="/about">
+        About
+      </Link>
+    </>
+  );
+};
+
+export default Navbar;
+
 import React from 'react';
 import {Link} from 'react-router-dom'
 import './navbarstyle.css';
@@ -16,3 +43,4 @@ const Navbar = () => {
 }
 
 export default Navbar;
+

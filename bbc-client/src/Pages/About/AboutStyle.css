@@ -1,0 +1,19 @@
+.AboutPageStyling {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 3rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Ayelet Gurel Orel Roy"
+    "David Guy Alex Adan";
+}
+
+.grid-container > * {
+  margin: 1rem 1rem;
+}
