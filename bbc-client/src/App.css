@@ -16,7 +16,7 @@ body {
   word-wrap: break-word;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .latestContainer {

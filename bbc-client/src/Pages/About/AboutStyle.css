@@ -17,3 +17,32 @@
 .grid-container > * {
   margin: 1rem 1rem;
 }
+
+.about {
+  display: flex;
+  flex-direction: column;
+}
+
+.about h2 {
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.name {
+  margin: auto;
+  margin-top: 30px;
+  text-align: center;
+  width: 230px;
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(46, 44, 44);
+  box-shadow: rgb(56 50 50 / 25%) 0px 14px 28px, rgb(0 0 0 / 22%) 0px 10px 10px;
+  border-radius: 5px;
+  border: solid rgb(161, 159, 159) 1px;
+}
+
+.name a {
+  padding: 0 4px;
+  font-size: 1.5rem;
+}
