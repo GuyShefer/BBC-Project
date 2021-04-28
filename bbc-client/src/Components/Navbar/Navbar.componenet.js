@@ -1,25 +1,17 @@
 import React from 'react';
-
 import {Link} from 'react-router-dom'
-
 import './navbarstyle.css';
-
-// import Nav from 'react-bootstrap/Nav';
-
-
 const Navbar = () => {
-
     return (
-        <>
-        <div className="navbarstyle"></div>
-         <Link className="navbarlink" to="/">
-            Main
-          </Link>
-
-       
-        
-
-        </>
+        <nav>
+          <div className="navbar">
+            <h1 className="logo">BBC Translator</h1>
+            <div className="links">
+              <Link className="link" to="/">HomePage</Link>
+              <Link className="link" to="/">About</Link>
+            </div>
+          </div>
+        </nav>
     )
 }
 

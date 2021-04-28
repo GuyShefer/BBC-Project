@@ -12,7 +12,7 @@ import Main from "./Components/Main/Main.components";
 
 export default function App() {
   return (
-    <div>
+    <div className='homepage'>
       <Router>
         <Navbar />
         <Switch>
@@ -46,6 +46,3 @@ export default function App() {
     </div>
   );
 }
-
-
-

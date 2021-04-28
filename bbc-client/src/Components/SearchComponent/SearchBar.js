@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import api from '../../api/api';
 
-
+import './searchbar.css'
 const SearchBar = () => {
   const [webSearch, setWebSearch] = useState("");
   const [language, setLanguage] = useState("arabic");
@@ -38,18 +38,14 @@ const SearchBar = () => {
             placeholder="Paste your URL website here..."
             onChange={(e) => setWebSearch(e.target.value)}
           ></input>
-          <div>
+          <div className="select-wrap">
             <select
               className="select"
               name="language"
               onChange={(e) => setLanguage(e.target.value)}
             >
-              {/*  Arabic  English Hebrew */}
-              {/* <option hidden>Choose language</option> */}
-
-              <option value="arabic">Arabic</option>
-              {/* <option value='english'>English</option> */}
               <option value="hebrew">Hebrew</option>
+              <option value="arabic">Arabic</option>
             </select>
             <button className="translateBtn" onClick={checkUrl}>
               Translate

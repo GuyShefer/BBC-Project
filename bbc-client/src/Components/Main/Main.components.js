@@ -8,7 +8,6 @@ export default function Main() {
         <div>
             <div className="landingContainer">
                 <div className="wrapper">
-                    <h1>BBC Science-Environment Translator</h1>
                     <SearchBar />
                 </div>
             </div>
