@@ -1,13 +1,28 @@
-.navbarstyle{
+nav{
     display: flex;
-    flex-direction: row;
-
-
+    flex-direction: column;
+    justify-content: left;
+    flex-wrap: nowrap;
+    background-color: #ffa500;
 }
-
-
-.navbarlink{
-margin : 2rem;
-
-
+.logo{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+nav .links {
+    flex: 1;
+    position: relative;
+    padding: 0 0 0 1rem;
+}
+.navbar {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+}
+nav .navbar a {
+    color:  white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 0 .5rem;
 }
