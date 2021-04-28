@@ -18,12 +18,14 @@ export default function App() {
     <div className="homepage">
       <Router>
         <Navbar />
-        <Switch>
-          <Route exact path="/" component={Main} />
-          <Route exact path="/translate" component={SearchPage} />
-          <Route exact path="/item/:id" component={ArticlePage} />
-          <Route exact path="/about" component={AboutPage} />
-        </Switch>
+        <div className="switcher">
+          <Switch>
+            <Route exact path="/" component={Main} />
+            <Route exact path="/translate" component={SearchPage} />
+            <Route exact path="/item/:id" component={ArticlePage} />
+            <Route exact path="/about" component={AboutPage} />
+          </Switch>
+        </div>
       </Router>
       <div>
         <div className="landingContainer">
