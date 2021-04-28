@@ -13,3 +13,7 @@
     "Ayelet Gurel Orel Roy"
     "David Guy Alex Adan";
 }
+
+.grid-container > * {
+  margin: 1rem 1rem;
+}
